@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G672FKQW8R"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G672FKQW8R');
+    </script>
+
+    <title>Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners</title>
+
+    <meta name="description" content="Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <!-- <meta property="og:image" content="https://code-as-policies.github.io/img/share_image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://code-as-policies.github.io/"/>
+    <meta property="og:title" content="Code as Policies" />
+    <meta property="og:description" content="Project page for Code as Policies: Language Model Programs for Embodied Control." /> -->
+
+        <!--TWITTER-->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Code as Policies" />
+    <meta name="twitter:description" content="Project page for Code as Policies: Language Model Programs for Embodied Control." />
+    <meta name="twitter:image" content="https://code-as-policies.github.io/img/share_image.png" /> -->
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app_anon.js"></script>
+	
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="row mt-4">
+            <h2 class="col-md-12 text-center">
+                <b><font size="+6">Robots That Ask For Help</font></b>: </br> Uncertainty Alignment for Large Language Model Planners </br> 
+                <!--<small>
+                    CoRL 2023, Under Review
+                </small>-->
+            </h2>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
+                    <source src="videos/tasks.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3 class="mt-4 mb-2">
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Large language models (LLMs) exhibit a wide range of promising capabilities --- from step-by-step planning to commonsense reasoning --- that may provide utility for robots, but remain prone to confidently hallucinated predictions. In this work, we present KnowNo, a framework for measuring and aligning the uncertainty of LLM-based planners, such that they know when they don't know, and ask for help when needed. KnowNo builds on the theory of conformal prediction to provide statistical guarantees on task completion while minimizing human help in complex multi-step planning settings. Experiments across a variety of simulated and real robot setups that involve tasks with different modes of ambiguity (e.g., from spatial to numeric uncertainties, from human preferences to Winograd schemas) show that KnowNo performs favorably over modern baselines (which may involve ensembles or extensive prompt tuning) in terms of improving efficiency and autonomy, while providing formal assurances. KnowNo can be used with LLMs out-of-the-box without model-finetuning, and suggests a promising lightweight approach to modeling uncertainty that can complement and scale with the growing capabilities of foundation models.
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/share_image.png" width="100%">
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <!-- <h3>
+                    Approach
+                </h3> -->
+                <!-- <p class="text-justify">
+                    Imagine a robot operating in a kitchen that is capable of executing skills such as "pick up the coffee cup" or "go to the sink".
+                    To get the robot to use these skills to perform a complex task (e.g. "I spilled my drink, can you help?"), the user could manually break it up into steps consisting of these atomic commands. 
+			        However,this would be exceedingly tedious. A language model can split the high-level instruction ("I spilled my drink, can you help?") into sub-tasks, but it cannot do that effectively unless it has the context of what the robot is capable of given the abilities, current state of the robot and its environment.
+                <br><br>
+                    When querying existing large language models, we see that a language model queried with "I spilled my drink, can you help?" may respond with "You could try using a vaccuum cleaner" or "I'm sorry, I didn't mean to spill it".
+                <p style="text-align:center;">
+        	        <image src="img/gpt3-cropped2.png" class="img-responsive">
+                </p>
+                    While these responses sound reasonable, they are not feasible to execute with the robot's capabilities in its current environment.  
+                <br><br>
+                    The main principle that we use to connect LLMs to physical tasks is to observe that, in addition of asking the LLM to simply interpret an instruction, we can use it to score the likelihood that an individual skill makes progress towards completing the high-level instruction.
+                    Furthermore, if each skill has an accompanying affordance function that quantifies how likely it is to succeed from the current state (such as a learned value function), its value can be used to weight the skill's likelihood.
+                <p style="text-align:center;">
+        	        <image src="img/saycan-llm.gif" class="img-responsive">
+                </p>
+                <br><br>
+                    Once the skill is selected, we execute it on the robot, the process proceeds by iteratively selecting a task and appending it to the instruction.
+                    Practically, we structure the planning as a dialog between a user and a robot, in which a user provides the high level-instruction, e.g. "How would you bring me a coke can?" and the language model responds with an explicit sequence e.g. "I would: 1. Find a coke can, 2. Pick up the coke can, 3. Bring it to you, 4. Done".  
+                <p style="text-align:center;">
+        	        <image src="img/saycan.png" class="img-responsive">        	   
+                </p>
+                In summary, given a high-level instruction, SayCan combines probabilities from a language model (representing the probability that a skill is useful for the instruction) with the probabilities from a value function (representing the probability of successfully executing said skill) to select the skill to perform. This emits a skill that is both possible and useful. The process is repeated by appending the selected skill to robot response and querying the models again, until the output step is to terminate.                 -->
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3>Experiment Videos and Generated Code</h3>
+                <p>Videos have sound that showcase voice and speech-based robot interface.</p>
+                <p>Long pauses between commands and responses are mostly caused by OpenAI API query times and rate limiting.</p>
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Tabletop Manipulation: Blocks</h5>
+                    <div class="card-body">
+                        <p>Choose a command:</p>
+                        <select class="form-select" size="5" aria-label="size 5 select example">
+                            <option value="blocks_1">
+                                1) Put the blocks in a horizontal line near the top
+                            </option>
+                            <option value="blocks_2">
+                                2) Move the sky-colored block in between the red block and the second block from the left
+                            </option>
+                            <option value="blocks_3">
+                                3) Why did you move the green block?
+                            </option>
+                            <option value="blocks_4">
+                                4) Which block did you move?
+                            </option>
+                            <option value="blocks_5">
+                                5) Arrange the blocks in a square around the middle
+                            </option>
+                            <option value="blocks_6">
+                                6) Make the square bigger
+                            </option>
+                            <option value="blocks_7">
+                                7) Undo that
+                            </option>
+                            <option value="blocks_8">
+                                8) Rotate the square by 45 degrees
+                            </option>
+                            <option value="blocks_9">
+                                9) Can you throw blocks?
+                            </option>
+                            <option value="blocks_10">
+                                10) Move the red block 5cm to the bottom
+                            </option>
+                            <option value="blocks_11">
+                                11) Do the same with the other blocks
+                            </option>
+                            <option value="blocks_12">
+                                12) Put the blocks on different corners clockwise starting at the top right corner
+                            </option>
+                        </select>
+                        <div class="col-md-12 mb-2">
+                            <video id="vid_blocks" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/blocks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="row" id="content_blocks_1">
+                            <div class="col-md-12" id="code_blocks_1">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_2" style="display:none">
+                            <div class="col-md-12" id="code_blocks_2">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_3" style="display:none">
+                            <div class="col-md-12" id="code_blocks_3">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_4" style="display:none">
+                            <div class="col-md-12" id="code_blocks_4">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_5" style="display:none">
+                            <div class="col-md-12" id="code_blocks_5">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_6" style="display:none">
+                            <div class="col-md-12" id="code_blocks_6">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_7" style="display:none">
+                            <div class="col-md-12" id="code_blocks_7">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_8" style="display:none">
+                            <div class="col-md-12" id="code_blocks_8">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_9" style="display:none">
+                            <div class="col-md-12" id="code_blocks_9">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_10" style="display:none">
+                            <div class="col-md-12" id="code_blocks_10">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_11" style="display:none">
+                            <div class="col-md-12" id="code_blocks_11">
+                            </div>
+                        </div>
+
+                        <div class="row" id="content_blocks_12" style="display:none">
+                            <div class="col-md-12" id="code_blocks_12">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

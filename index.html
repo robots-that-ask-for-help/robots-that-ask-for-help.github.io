@@ -79,7 +79,7 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/tasks.mp4" type="video/mp4">
+                    <source src="videos/webpage-front.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -93,7 +93,7 @@
                     Large language models (LLMs) exhibit a wide range of promising capabilities --- from step-by-step planning to commonsense reasoning --- that may provide utility for robots, but remain prone to confidently hallucinated predictions. In this work, we present KnowNo, a framework for measuring and aligning the uncertainty of LLM-based planners, such that they know when they don't know, and ask for help when needed. KnowNo builds on the theory of conformal prediction to provide statistical guarantees on task completion while minimizing human help in complex multi-step planning settings. Experiments across a variety of simulated and real robot setups that involve tasks with different modes of ambiguity (e.g., from spatial to numeric uncertainties, from human preferences to Winograd schemas) show that KnowNo performs favorably over modern baselines (which may involve ensembles or extensive prompt tuning) in terms of improving efficiency and autonomy, while providing formal assurances. KnowNo can be used with LLMs out-of-the-box without model-finetuning, and suggests a promising lightweight approach to modeling uncertainty that can complement and scale with the growing capabilities of foundation models.
                 </p>
                 <p style="text-align:center;">
-                    <image src="img/share_image.png" width="100%">
+                    <image src="img/robot-help-teaser.png" width="100%">
                 </p>
             </div>
         </div>
@@ -131,49 +131,17 @@
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3>Experiment Videos and Generated Code</h3>
-                <p>Videos have sound that showcase voice and speech-based robot interface.</p>
-                <p>Long pauses between commands and responses are mostly caused by OpenAI API query times and rate limiting.</p>
+                <h3>Experiment Videos</h3>
                 <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Tabletop Manipulation: Blocks</h5>
+                    <h5 class="card-header">Mobile Manipulation</h5>
                     <div class="card-body">
                         <p>Choose a command:</p>
                         <select class="form-select" size="5" aria-label="size 5 select example">
                             <option value="blocks_1">
-                                1) Put the blocks in a horizontal line near the top
+                                1) Put the bowl on the stove.
                             </option>
                             <option value="blocks_2">
-                                2) Move the sky-colored block in between the red block and the second block from the left
-                            </option>
-                            <option value="blocks_3">
-                                3) Why did you move the green block?
-                            </option>
-                            <option value="blocks_4">
-                                4) Which block did you move?
-                            </option>
-                            <option value="blocks_5">
-                                5) Arrange the blocks in a square around the middle
-                            </option>
-                            <option value="blocks_6">
-                                6) Make the square bigger
-                            </option>
-                            <option value="blocks_7">
-                                7) Undo that
-                            </option>
-                            <option value="blocks_8">
-                                8) Rotate the square by 45 degrees
-                            </option>
-                            <option value="blocks_9">
-                                9) Can you throw blocks?
-                            </option>
-                            <option value="blocks_10">
-                                10) Move the red block 5cm to the bottom
-                            </option>
-                            <option value="blocks_11">
-                                11) Do the same with the other blocks
-                            </option>
-                            <option value="blocks_12">
-                                12) Put the blocks on different corners clockwise starting at the top right corner
+                                2) Put the kettle chips in landfill.
                             </option>
                         </select>
                         <div class="col-md-12 mb-2">
@@ -192,53 +160,33 @@
                             </div>
                         </div>
 
-                        <div class="row" id="content_blocks_3" style="display:none">
-                            <div class="col-md-12" id="code_blocks_3">
+                    </div>
+                </div>
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Bimanual Manipulation</h5>
+                    <div class="card-body">
+                        <p>Choose a command:</p>
+                        <select class="form-select" size="5" aria-label="size 5 select example">
+                            <option value="blocks_1">
+                                1) Put the blocks in a horizontal line near the top
+                            </option>
+                            <option value="blocks_2">
+                                2) Move the sky-colored block in between the red block and the second block from the left
+                            </option>
+                        </select>
+                        <div class="col-md-12 mb-2">
+                            <video id="vid_blocks" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/blocks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="row" id="content_blocks_1">
+                            <div class="col-md-12" id="code_blocks_1">
                             </div>
                         </div>
 
-                        <div class="row" id="content_blocks_4" style="display:none">
-                            <div class="col-md-12" id="code_blocks_4">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_5" style="display:none">
-                            <div class="col-md-12" id="code_blocks_5">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_6" style="display:none">
-                            <div class="col-md-12" id="code_blocks_6">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_7" style="display:none">
-                            <div class="col-md-12" id="code_blocks_7">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_8" style="display:none">
-                            <div class="col-md-12" id="code_blocks_8">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_9" style="display:none">
-                            <div class="col-md-12" id="code_blocks_9">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_10" style="display:none">
-                            <div class="col-md-12" id="code_blocks_10">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_11" style="display:none">
-                            <div class="col-md-12" id="code_blocks_11">
-                            </div>
-                        </div>
-
-                        <div class="row" id="content_blocks_12" style="display:none">
-                            <div class="col-md-12" id="code_blocks_12">
+                        <div class="row" id="content_blocks_2" style="display:none">
+                            <div class="col-md-12" id="code_blocks_2">
                             </div>
                         </div>
 

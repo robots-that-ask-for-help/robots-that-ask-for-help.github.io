@@ -16,7 +16,8 @@ var codegen_html_template = `
 
         var codegen_file = 'https://robots-that-ask-for-help.github.io/uncertainty/' + domain_name + '/' + cmd_idx_str + '.txt';
         $.get(codegen_file, function(data) {
-            var highlighted_code = hljs.highlight(data, {language: 'python'}).value;
+            // var highlighted_code = hljs.highlight(data, {language: 'python'}).value;
+            var highlighted_code = data;
             var html_code = codegen_html_template
                                 .replace('{code}', highlighted_code)
                                 // .replace('{link}', codegen_file)

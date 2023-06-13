@@ -59,7 +59,7 @@ var codegen_html_template = `
     }
 
     var vid_end_times = {
-        "Saycan": {
+        "saycan": {
             1: 1 * 60 + 32,
             2: 2 * 60 + 17,
             3: 2 * 60 + 50,

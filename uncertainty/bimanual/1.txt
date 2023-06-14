@@ -1,0 +1,4 @@
+B) pick up the pink plushie with arm-swift.
+E) pick up the pink plushie with arm-nifty. -> chosen by human and executed
+
+# Ambiguity about naming of the two arms

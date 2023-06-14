@@ -1,0 +1,1 @@
+A) pick up the container box with left arm and place it at the front of table. -> executed without human help, but fails since the box should instead be pushed

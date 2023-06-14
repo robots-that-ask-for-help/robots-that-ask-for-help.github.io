@@ -1,0 +1,5 @@
+A) pick up the detergent bottle with right arm and place it at the front of table.
+B) push the detergent bottle with right arm to the front of the table.
+E) pick up the detergent bottle with left arm and place it at the front of table. -> chosen by human and executed
+
+# Ambiguity about whether pushing or grasping the bottle

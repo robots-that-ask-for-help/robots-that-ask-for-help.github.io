@@ -1,0 +1,4 @@
+A) push the sprite can with left arm.
+E) pick up the sprite can with left arm. -> chosen by human and executed
+
+# Ambiguity about which bin the human means (but LLM is biased towards the left arm as the prediction set only shows LLM choosing the left arm)

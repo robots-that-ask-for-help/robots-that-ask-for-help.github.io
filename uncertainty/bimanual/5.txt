@@ -1,0 +1,4 @@
+A) pick up the coke can with right arm. -> chosen by human and executed
+D) pick up the coke can with left arm.
+
+# Ambiguity about which arm is closer to the coke

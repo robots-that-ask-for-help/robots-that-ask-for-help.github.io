@@ -1,0 +1,4 @@
+B) pick up the detergent bottle at the handle with left arm.
+D) pick up the detergent bottle at the handle with right arm. -> chosen by human and executed
+
+# Ambiguity about which side the handle is

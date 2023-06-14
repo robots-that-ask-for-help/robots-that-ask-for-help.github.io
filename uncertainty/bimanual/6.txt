@@ -1,0 +1,5 @@
+B) pick up the yellow plushie with right arm from the top.
+C) pick up the yellow plushie with left arm from the top. -> chosen by human and executed
+E) pick up the yellow plushie with left arm from the side.
+
+# Ambiguity about whether to picking from the top or from the right

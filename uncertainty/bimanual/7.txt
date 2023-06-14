@@ -1,0 +1,5 @@
+B) pick up the detergent bottle with left arm from the top.
+C) an option not listed here.
+E) pick up the detergent bottle with right arm from the side. -> chosen by human and executed
+
+# Ambiguity about picking from the top or from the side

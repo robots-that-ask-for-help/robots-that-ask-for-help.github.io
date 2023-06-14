@@ -1,0 +1,4 @@
+A) push the banana with arm-nifty.
+D) pick up the banana with arm-nifty. -> chosen by human and executed
+
+# Ambiguity about naming of the two arms

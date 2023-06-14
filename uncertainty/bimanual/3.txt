@@ -1,0 +1,4 @@
+A) pick up the mango with left arm.
+D) pick up the mango with right arm. -> chosen by human and executed
+
+# Ambiguity about where the human is

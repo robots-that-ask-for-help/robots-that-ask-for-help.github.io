@@ -11,12 +11,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-G672FKQW8R');
     </script>
 
     <title>Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="image/favicon.png">
 
     <meta name="description" content="Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,7 +78,7 @@
 
         <div class="row mt-4">
             <div class="col-md-12">
-                <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
+                <video id="v0" width="80%" preload="metadata" playsinline muted loop autoplay>
                     <source src="videos/webpage-front.mp4" type="video/mp4">
                 </video>
             </div>
@@ -137,8 +136,8 @@
                     <h5 class="card-header">Mobile Manipulation</h5>
                     <div class="card-body">
 
-                        <p>Choose a task request:</p>
-                        <select class="form-select" size="16" aria-label="size 5 select example">
+                        <p>Choose a user instruction:</p>
+                        <select class="form-select" size="8" aria-label="size 5 select example">
                             <option value="saycan_1">
                                 1) Pick up the bottled water.
                             </option>
@@ -260,30 +259,114 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Multi-Step Tabletop Rearrangement</h5>
+                    <div class="card-body">
+
+                        <p>User instruction: Sort the items that human likes in the blue plate, and ones human dislikes in the green plate. Items involved in each trial:</p>
+                        <select class="form-select" size="8" aria-label="size 5 select example">
+                            <option value="ur5_1">
+                                1) Pick up the bottled water.
+                            </option>
+                            <option value="ur5_2">
+                                2) Bring me the chips.
+                            </option>
+                            <option value="ur5_3">
+                                3) Put the apple in the drawer.
+                            </option>
+                            <option value="ur5_4">
+                                4) Put the rice chips in the top drawer.
+                            </option>
+                            <option value="ur5_5">
+                                5) Put the chips in the drawer.
+                            </option>
+                            <option value="ur5_6">
+                                6) Put the soda in the drawer.
+                            </option>
+                            <option value="ur5_7">
+                                7) Put the apple near the bottle.
+                            </option>
+                            <option value="ur5_8">
+                                8) Put the multigrain chips near the fruit.
+                            </option>
+                            <option value="ur5_9">
+                                9) There is the kettle chips and RedBull. I ate it already. Can you dispose of it?
+                            </option>
+                            <option value="ur5_10">
+                                10) There is the spong
+                            </option>
+                        </select>
+
+                        <div class="col-md-12 mb-2">
+                            <video id="vid_ur5" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/ur5/ur5_all_handbrake_720p.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="row" id="content_ur5_1">
+                            <div class="col-md-12" id="code_ur5_1">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_2" style="display:none">
+                            <div class="col-md-12" id="code_ur5_2">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_3" style="display:none">
+                            <div class="col-md-12" id="code_ur5_3">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_4" style="display:none">
+                            <div class="col-md-12" id="code_ur5_4">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_5" style="display:none">
+                            <div class="col-md-12" id="code_ur5_5">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_6" style="display:none">
+                            <div class="col-md-12" id="code_ur5_6">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_7" style="display:none">
+                            <div class="col-md-12" id="code_ur5_7">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_8" style="display:none">
+                            <div class="col-md-12" id="code_ur5_8">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_9" style="display:none">
+                            <div class="col-md-12" id="code_ur5_9">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_10" style="display:none">
+                            <div class="col-md-12" id="code_ur5_10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Bimanual Manipulation</h5>
                     <div class="card-body">
                         <p>Choose a task request:</p>
                         <select class="form-select" size="5" aria-label="size 5 select example">
-                            <option value="blocks_1">
+                            <option value="bimanual_1">
                                 1) Pick up the bottle.
                             </option>
                         </select>
                         <div class="col-md-12 mb-2">
-                            <video id="vid_blocks" width="100%" preload="metadata" playsinline controls>
+                            <video id="vid_bimanual" width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/blocks.mp4" type="video/mp4">
                             </video>
                         </div>
 
-                        <!-- <div class="row" id="content_blocks_1">
-                            <div class="col-md-12" id="code_blocks_1">
+                        <div class="row" id="content_bimanual_1">
+                            <div class="col-md-12" id="code_bimanual_1">
                             </div>
                         </div>
 
-                        <div class="row" id="content_blocks_2" style="display:none">
-                            <div class="col-md-12" id="code_blocks_2">
-                            </div>
-                        </div> -->
 
                     </div>
                 </div>

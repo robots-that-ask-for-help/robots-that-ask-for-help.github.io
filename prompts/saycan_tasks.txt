@@ -1,0 +1,837 @@
+Task: Can you pass me a popular alternative to Coke?
+Objects: Pepsi, bottled water, Coke
+
+Task: Bring me a bag of chips.
+Objects: multigrain chips, kettle chips, jalapeno chips
+
+Task: It is too sweet. Can you dispose of it?
+Objects: Sprite, bottled water, orange soda
+
+Task: May I have the bottled unsweetened tea?
+Objects: bottled unsweetened tea, apple, jalapeno chips
+
+Task: Bring me that drink.
+Objects: Pepsi, Coke, orange soda
+
+Task: I'm craving something with a little heat.
+Objects: jalapeno chips, rice chips, energy bar
+
+Task: I drank it already. Can you dispose of it?
+Objects: rice chips, apple, Pepsi
+
+Task: Bring me that caffeinated drink.
+Objects: RedBull, bottled unsweetened tea, Pepsi
+
+Task: Knock a Coke over.
+Objects: Coke, RedBull, Sprite
+
+Task: Knock a bottled water over.
+Objects: bottled water, orange soda, RedBull
+
+Task: Bring me something to keep me going during a long drive.
+Objects: RedBull, bottled tea, Pepsi
+
+Task: Put multigrain chips beside the can.
+Objects: multigrain chips, Pepsi, Sprite
+
+Task: Put orange soda near the fruit.
+Objects: apple, orange soda, orange
+
+Task: Can you dispose of the bottle drink? It should have expired.
+Objects: bottled unsweetened tea, bottled water, energy bar
+
+Task: Put Coke in the drawer.
+Objects: bottled unsweetened tea, Coke, bottled water
+
+Task: Could you pass me a lime-flavored soda?
+Objects: orange soda, bottled unsweetened tea, Sprite
+
+Task: Can I have a bag of kettle chips?.
+Objects: kettle chips, bottled tea, jalapeno chips
+
+Task: Put the chips in the drawer.
+Objects: rice chips, multigrain chips, jalapeno chips
+
+Task: Bring me a Sprite, please.
+Objects: Sprite, apple, rice chips
+
+Task: Bring me an apple, please.
+Objects: apple, rice chips, kettle chips
+
+Task: I'm looking for a refreshing, flavored water.
+Objects: bottled tea, Pepsi, RedBull
+
+Task: Bring me that chips.
+Objects: rice chips, multigrain chips, jalapeno chips
+
+Task: It has expired. Can you dispose of it?
+Objects: bottled unsweetened tea, Sprite, energy bar
+
+Task: I'd like a drink that doesn't come in a can.
+Objects: bottled water, bottled tea, Pepsi
+
+Task: It is too spicy. Can you dispose of it?
+Objects: apple, jalapeno chips, bottled unsweetened tea
+
+Task: Can you throw away a RedBull?.
+Objects: RedBull, kettle chips, rice chips
+
+Task: Bring me that sweet drink.
+Objects: Coke, Pepsi, Sprite
+
+Task: Put away the empty can, please.
+Objects: orange soda, Coke, Pepsi
+
+Task: Can I have a bottled tea?.
+Objects: bottled tea, Coke, jalapeno chips
+
+Task: I ate it already. Can you dispose of it?
+Objects: kettle chips, jalapeno chips, rice chips
+
+Task: Put bottled water next to the fruit.
+Objects: orange, apple, bottled water
+
+Task: Bring me a snack.
+Objects: apple, jalapeno chips, orange
+
+Task: I need an orange soda.
+Objects: orange soda, RedBull, Pepsi
+
+Task: Put orange soda near the bottle.
+Objects: bottled unsweetened tea, bottled water, orange soda
+
+Task: Put the kettle chips in the middle drawer.
+Objects: kettle chips, multigrain chips, Pepsi
+
+Task: It needs to be cleaned. Can you give it to me?
+Objects: dirty sponge with food residue, multigrain chips, apple
+
+Task: Bring me that fruit.
+Objects: apple, orange, energy bar
+
+Task: I need a pick-me-up.
+Objects: RedBull, Pepsi, bottled unsweetened tea
+
+Task: Put the energy bar in the top drawer.
+Objects: energy bar, jalapeno chips, kettle chips
+
+Task: Put jalapeno chips in the drawer.
+Objects: energy bar, jalapeno chips, Pepsi
+
+Task: Put the Coke next to the orange.
+Objects: bottled water, Coke, orange
+
+Task: Put kettle chips beside the bottle.
+Objects: bottled unsweetened tea, bottled water, kettle chips
+
+Task: I'm craving a fizzy drink that's not a cola.
+Objects: orange soda, Sprite, Coke
+
+Task: Please pass me a drink without flavor.
+Objects: bottled water, Coke, Pepsi
+
+Task: Put kettle chips next to the bottle.
+Objects: bottled unsweetened tea, kettle chips, bottled water
+
+Task: Put the bottled water next to the apple.
+Objects: apple, bottled water, RedBull
+
+Task: Put RedBull beside the chips.
+Objects: RedBull, rice chips, kettle chips
+
+Task: Put Pepsi next to the fruit.
+Objects: orange, apple, Pepsi
+
+Task: Put multigrain chips next to the fruit.
+Objects: orange, apple, multigrain chips
+
+Task: Dispose of that empty chip bag, please.
+Objects: jalapeno chips, multigrain chips, rice chips
+
+Task: Bring me the sponge.
+Objects: energy bar, dirty sponge with food residue, clean sponge
+
+Task: Could you give me an energy drink?.
+Objects: RedBull, bottled tea, Sprite
+
+Task: Can you dispose of the chips? It should have expired.
+Objects: kettle chips, jalapeno chips, multigrain chips
+
+Task: I don't want to use it for cleaning any more. Can you please dispose of it?
+Objects: dirty sponge with food residue, energy bar, rice chips
+
+Task: Put the apple next to the Coke.
+Objects: Coke, apple, multigrain chips
+
+Task: Bring me something to munch on that isn't too heavy.
+Objects: energy bar, rice chips, apple
+
+Task: Put Coke near the fruit.
+Objects: Coke, orange, apple
+
+Task: Put bottled unsweetened tea beside the can.
+Objects: Coke, orange soda, bottled unsweetened tea
+
+Task: Put the apple in the middle drawer.
+Objects: apple, Pepsi, energy bar
+
+Task: Put the Sprite in the top drawer.
+Objects: RedBull, rice chips, Sprite
+
+Task: Can you throw away an energy bar?.
+Objects: energy bar, Coke, kettle chips
+
+Task: Put jalapeno chips near the bottle.
+Objects: bottled water, jalapeno chips, bottled unsweetened tea
+
+Task: I need a quick energy boost; do you have a bar for that?.
+Objects: energy bar, jalapeno chips, rice chips
+
+Task: I'd like to have a soft fruit.
+Objects: energy bar, rice chips, orange
+
+Task: Put the multigrain chips next to the orange.
+Objects: RedBull, orange, multigrain chips
+
+Task: I need a bag of multigrain chips.
+Objects: multigrain chips, apple, energy bar
+
+Task: Bring me a cola.
+Objects: Coke, Pepsi, bottled water
+
+Task: Bring me a RedBull, please.
+Objects: RedBull, rice chips, Pepsi
+
+Task: Bring me something to eat.
+Objects: energy bar, jalapeno chips, orange
+
+Task: Bring me that snack.
+Objects: apple, energy bar, orange
+
+Task: Put the bottled unsweetened tea next to the apple.
+Objects: bottled unsweetened tea, RedBull, apple
+
+Task: Put multigrain chips in the drawer.
+Objects: bottled water, RedBull, multigrain chips
+
+Task: Put jalapeno chips next to the can.
+Objects: jalapeno chips, Sprite, Coke
+
+Task: I'd like a RedBull.
+Objects: RedBull, Coke, orange soda
+
+Task: Put jalapeno chips beside the fruit.
+Objects: jalapeno chips, apple, orange
+
+Task: I need that multigrain chips.
+Objects: multigrain chips, orange soda, bottled unsweetened tea
+
+Task: Put the bottled unsweetened tea next to the orange.
+Objects: bottled unsweetened tea, orange, kettle chips
+
+Task: Dispose of the empty bottle, please.
+Objects: bottled unsweetened tea, bottled water, multigrain chips
+
+Task: Put Pepsi in the drawer.
+Objects: Pepsi, bottled tea, apple
+
+Task: Bring me that soda.
+Objects: Coke, Sprite, orange soda
+
+Task: Bring me a bag of multigrain chips, please.
+Objects: multigrain chips, jalapeno chips, orange
+
+Task: Bring me a healthy snack.
+Objects: apple, orange, kettle chips
+
+Task: Can you dispose of that soda? It should have expired.
+Objects: Pepsi, Sprite, Coke
+
+Task: Put Pepsi beside the chips.
+Objects: Pepsi, rice chips, jalapeno chips
+
+Task: Put the bottled tea next to the apple.
+Objects: apple, bottled tea, RedBull
+
+Task: Put bottled tea beside the chips.
+Objects: bottled tea, rice chips, kettle chips
+
+Task: Put orange soda near the chips.
+Objects: orange soda, rice chips, multigrain chips
+
+Task: Put multigrain chips near the can.
+Objects: Coke, orange soda, multigrain chips
+
+Task: Put bottled tea in the drawer.
+Objects: bottled tea, kettle chips, Sprite
+
+Task: I need a bottled tea.
+Objects: bottled tea, Sprite, Coke
+
+Task: Bring me a fruit.
+Objects: apple, orange, multigrain chips
+
+Task: Put RedBull next to the chips.
+Objects: RedBull, multigrain chips, kettle chips
+
+Task: Hand me a sponge please.
+Objects: dirty sponge with food residue, clean sponge, kettle chips
+
+Task: Put the jalapeno chips in the top drawer.
+Objects: jalapeno chips, Coke, rice chips
+
+Task: Bring me something to drink.
+Objects: RedBull, Coke, bottled unsweetened tea
+
+Task: Bring me a soda.
+Objects: orange soda, Sprite, RedBull
+
+Task: Can you pass me a snack that has a mix of different grains?.
+Objects: multigrain chips, rice chips, energy bar
+
+Task: Can you dispose of the jalapeno chips?
+Objects: orange, bottled water, jalapeno chips
+
+Task: Can you give me something I could use to clean up a spill?.
+Objects: clean sponge, dirty sponge with food residue, RedBull
+
+Task: Put the soda in the drawer.
+Objects: jalapeno chips, Sprite, orange soda
+
+Task: Please give me an apple.
+Objects: apple, jalapeno chips, orange soda
+
+Task: Put RedBull in the drawer.
+Objects: RedBull, Sprite, Pepsi
+
+Task: Put the rice chips next to the apple.
+Objects: apple, rice chips, Pepsi
+
+Task: Place the bowl in the microwave, please.
+Objects: metal bowl, plastic bowl, microwave
+
+Task: I want something crunchy.
+Objects: rice chips, kettle chips, jalapeno chips
+
+Task: May I have a Coke?.
+Objects: Coke, RedBull, orange
+
+Task: I feel like having something with bubbles.
+Objects: Coke, RedBull, Pepsi
+
+Task: I need to clean up a mess, can you pass me something for cleaning?.
+Objects: clean sponge, dirty sponge with food residue, RedBull
+
+Task: Please pass me a bag of rice chips.
+Objects: rice chips, kettle chips, jalapeno chips
+
+Task: Put rice chips in the drawer.
+Objects: rice chips, kettle chips, energy bar
+
+Task: Put RedBull next to the fruit.
+Objects: RedBull, orange, apple
+
+Task: How about some chips that are a healthier option?.
+Objects: multigrain chips, rice chips, orange
+
+Task: Put the Sprite in the middle drawer.
+Objects: Sprite, rice chips, energy bar
+
+Task: Bring me a bottled water, please.
+Objects: bottled water, Pepsi, orange soda
+
+Task: May I have a bag of kettle chips?.
+Objects: kettle chips, energy bar, Coke
+
+Task: Bring me something with caffeine.
+Objects: Sprite, RedBull, Pepsi
+
+Task: Please pass me an energy bar.
+Objects: energy bar, multigrain chips, bottled tea
+
+Task: I'm craving something fizzy.
+Objects: Pepsi, orange soda, bottled tea
+
+Task: Put bottled water near the can.
+Objects: Pepsi, bottled water, Coke
+
+Task: I'd like to try something sweet and tangy.
+Objects: orange soda, bottled water, RedBull
+
+Task: Can I have a bag of multigrain chips?.
+Objects: multigrain chips, orange, jalapeno chips
+
+Task: Put kettle chips near the can.
+Objects: Sprite, orange soda, kettle chips
+
+Task: Put the RedBull next to the orange.
+Objects: orange, RedBull, Coke
+
+Task: Put the jalapeno chips in the middle drawer.
+Objects: jalapeno chips, bottled water, Coke
+
+Task: Put apple in the drawer.
+Objects: Coke, apple, multigrain chips
+
+Task: I need a orange.
+Objects: orange, Sprite, bottled water
+
+Task: Please give me a Pepsi.
+Objects: Pepsi, apple, Sprite
+
+Task: I need a sugar rush.
+Objects: Coke, energy bar, Sprite
+
+Task: Put Sprite near the bottle.
+Objects: bottled water, bottled unsweetened tea, Sprite
+
+Task: Put the rice chips next to the orange.
+Objects: orange, rice chips, multigrain chips
+
+Task: Please pass me an apple.
+Objects: apple, Coke, Sprite
+
+Task: I'd like to have a crunchy fruit.
+Objects: apple, multigrain chips, jalapeno chips
+
+Task: Bring me a Coke, please.
+Objects: Coke, Pepsi, kettle chips
+
+Task: Put Sprite in the drawer.
+Objects: Sprite, kettle chips, orange soda
+
+Task: I need to clean up a mess, can you pass me something for cleaning?
+Objects: bottled unsweetened tea, clean sponge, dirty sponge with food residue
+
+Task: It is rotten. Can you dispose of it?
+Objects: rice chips, apple, orange soda
+
+Task: Put the jalapeno chips next to the water.
+Objects: jalapeno chips, rice chips, bottled water
+
+Task: Put the bottled water in the top drawer.
+Objects: bottled water, orange soda, orange
+
+Task: Put bottled water next to the chips.
+Objects: jalapeno chips, bottled water, multigrain chips
+
+Task: Can you give me something I could use to clean up a spill?
+Objects: clean sponge, dirty sponge with food residue, jalapeno chips
+
+Task: Dispose of that empty can, please.
+Objects: RedBull, Pepsi, orange soda
+
+Task: Put Sprite next to the chips.
+Objects: Sprite, kettle chips, multigrain chips
+
+Task: Put orange soda in the drawer.
+Objects: RedBull, orange soda, energy bar
+
+Task: Bring me a drink that reminds me of summer.
+Objects: Sprite, orange soda, bottled unsweetened tea
+
+Task: Can you dispose of that fruit?
+Objects: apple, orange soda, orange
+
+Task: Put the Coke in the top drawer.
+Objects: Coke, energy bar, multigrain chips
+
+Task: Put Sprite beside the fruit.
+Objects: Sprite, apple, orange
+
+Task: Can you give me something useful for cleaning purposes?.
+Objects: clean sponge, dirty sponge with food residue, Coke
+
+Task: Put the multigrain chips in the top drawer.
+Objects: RedBull, multigrain chips, kettle chips
+
+Task: I want a drink with a kick of caffeine and citrus flavor.
+Objects: RedBull, Coke, orange soda
+
+Task: Put Sprite near the chips.
+Objects: Sprite, rice chips, kettle chips
+
+Task: Place the bowl on the cooktop, please.
+Objects: plastic bowl, portable induction cooktop, metal bowl
+
+Task: Can I have a Sprite?.
+Objects: Sprite, bottled water, jalapeno chips
+
+Task: I just worked out; can you get me something.
+Objects: energy bar, orange soda, apple
+
+Task: Please pass me a bottled tea.
+Objects: bottled tea, multigrain chips, Coke
+
+Task: Knock a Sprite over.
+Objects: Sprite, Coke, RedBull
+
+Task: Put Coke next to the fruit.
+Objects: Coke, orange, apple
+
+Task: Bring me something with a kick.
+Objects: Sprite, RedBull, jalapeno chips
+
+Task: Put Pepsi near the fruit.
+Objects: apple, orange, Pepsi
+
+Task: Can you bring me an energy drink?.
+Objects: RedBull, orange soda, Pepsi
+
+Task: I'm in need of a snack with a spicy kick.
+Objects: jalapeno chips, orange, energy bar
+
+Task: Knock a RedBull over.
+Objects: RedBull, Coke, orange soda
+
+Task: Put the multigrain chips next to the Coke.
+Objects: Coke, multigrain chips, jalapeno chips
+
+Task: Can you throw away an apple?.
+Objects: apple, bottled tea, rice chips
+
+Task: May I have an energy bar?.
+Objects: energy bar, bottled water, multigrain chips
+
+Task: Bring me an orange soda, please.
+Objects: orange soda, Sprite, rice chips
+
+Task: Bring me a soda that isn't a Coke.
+Objects: orange soda, Pepsi, RedBull
+
+Task: I need a snack that won't ruin my diet.
+Objects: apple, energy bar, orange
+
+Task: Bring me a sweet drink.
+Objects: orange soda, Coke, bottled water
+
+Task: Put kettle chips beside the fruit.
+Objects: orange, apple, kettle chips
+
+Task: Throw away the empty chip bag, please.
+Objects: rice chips, kettle chips, multigrain chips
+
+Task: I want a fruit that's both sweet and tangy.
+Objects: orange, jalapeno chips, rice chips
+
+Task: Put kettle chips near the fruit.
+Objects: kettle chips, apple, orange
+
+Task: Can you throw away a bag of jalapeno chips?.
+Objects: jalapeno chips, Pepsi, multigrain chips
+
+Task: Can you throw away a Sprite?.
+Objects: Sprite, energy bar, rice chips
+
+Task: Put Coke next to the bottle.
+Objects: bottled water, bottled unsweetened tea, Coke
+
+Task: Can I have an energy bar?.
+Objects: energy bar, kettle chips, jalapeno chips
+
+Task: I'd love to try some chips with a unique texture.
+Objects: energy bar, kettle chips, apple
+
+Task: I want a healthy snack.
+Objects: apple, multigrain chips, rice chips
+
+Task: Put multigrain chips near the fruit.
+Objects: apple, multigrain chips, orange
+
+Task: Put the jalapeno chips next to the Coke.
+Objects: Coke, jalapeno chips, apple
+
+Task: I had some chips already; can you get me something different?.
+Objects: apple, orange, jalapeno chips
+
+Task: Please pass me a Coke.
+Objects: Coke, apple, orange soda
+
+Task: I need an apple.
+Objects: apple, energy bar, multigrain chips
+
+Task: May I have an apple?.
+Objects: apple, Sprite, rice chips
+
+Task: Put Pepsi beside the bottle.
+Objects: Pepsi, bottled water, bottled unsweetened tea
+
+Task: Put the kettle chips next to the Coke.
+Objects: Coke, kettle chips, multigrain chips
+
+Task: How about some chips that are a healthier option?
+Objects: multigrain chips, rice chips, orange
+
+Task: Put orange soda next to the fruit.
+Objects: orange soda, orange, apple
+
+Task: Can you bring me a citrus-flavored soda?
+Objects: Sprite, orange soda, Coke
+
+Task: Put Pepsi beside the fruit.
+Objects: Pepsi, apple, orange
+
+Task: Please pass me a bag of multigrain chips.
+Objects: multigrain chips, RedBull, Pepsi
+
+Task: I need a quick energy boost; do you have a bar for that?
+Objects: energy bar, rice chips, kettle chips
+
+Task: Can you give me something useful for cleaning purposes?
+Objects: clean sponge, Sprite, dirty sponge with food residue
+
+Task: Bring me that cola.
+Objects: Pepsi, Coke, orange soda
+
+Task: I'd like a bag of multigrain chips.
+Objects: multigrain chips, RedBull, energy bar
+
+Task: Put the Sprite next to the apple.
+Objects: Sprite, rice chips, apple
+
+Task: Can you bring me a citrus-flavored soda?.
+Objects: Sprite, Pepsi, bottled water
+
+Task: Please give me a RedBull.
+Objects: RedBull, jalapeno chips, rice chips
+
+Task: I want a drink, but nothing too sweet.
+Objects: bottled water, bottled tea, orange soda
+
+Task: Put bottled tea next to the chips.
+Objects: bottled tea, rice chips, multigrain chips
+
+Task: Could you pass me a lime-flavored soda?.
+Objects: Sprite, RedBull, bottled tea
+
+Task: Put the bottled water in the middle drawer.
+Objects: bottled water, orange, Pepsi
+
+Task: Put bottled unsweetened tea beside the fruit.
+Objects: apple, orange, bottled unsweetened tea
+
+Task: I'm feeling thirsty; could you bring me something plain and hydrating?.
+Objects: bottled water, bottled tea, Sprite
+
+Task: Put bottled unsweetened tea next to the fruit.
+Objects: bottled unsweetened tea, apple, orange
+
+Task: I want a snack, but I'm not in the mood for something sweet.
+Objects: rice chips, kettle chips, apple
+
+Task: Put that bottled unsweetened tea in the bottom drawer.
+Objects: Pepsi, bottled unsweetened tea, RedBull
+
+Task: I'd like a bottled water.
+Objects: bottled water, Coke, bottled tea
+
+Task: Put jalapeno chips beside the can.
+Objects: Pepsi, orange soda, jalapeno chips
+
+Task: I need a quick energy boost.
+Objects: bottled tea, RedBull, Pepsi
+
+Task: Put kettle chips beside the can.
+Objects: kettle chips, Coke, Pepsi
+
+Task: Put RedBull beside the fruit.
+Objects: RedBull, orange, apple
+
+Task: Can you put away the soda? It should have expired.
+Objects: orange soda, Sprite, Pepsi
+
+Task: Please give me a bag of kettle chips.
+Objects: kettle chips, multigrain chips, Sprite
+
+Task: Can I have a orange?.
+Objects: orange, jalapeno chips, Pepsi
+
+Task: Put Coke next to the chips.
+Objects: Coke, multigrain chips, kettle chips
+
+Task: I need a Sprite.
+Objects: Sprite, bottled tea, multigrain chips
+
+Task: Put the orange soda in the top drawer.
+Objects: orange soda, Pepsi, rice chips
+
+Task: Put bottled unsweetened tea near the can.
+Objects: bottled unsweetened tea, Pepsi, orange soda
+
+Task: I'd like an orange soda.
+Objects: orange soda, Pepsi, kettle chips
+
+Task: Can you throw away a bottled tea?.
+Objects: bottled tea, energy bar, multigrain chips
+
+Task: Put rice chips beside the fruit.
+Objects: orange, apple, rice chips
+
+Task: I'd like a snack that's not too noisy to eat.
+Objects: energy bar, orange, jalapeno chips
+
+Task: Put that Sprite in the bottom drawer.
+Objects: rice chips, Sprite, orange
+
+Task: Put the kettle chips in the top drawer.
+Objects: kettle chips, jalapeno chips, orange soda
+
+Task: I need something to help me power through my study session.
+Objects: Coke, energy bar, RedBull
+
+Task: I'd like a orange.
+Objects: orange, jalapeno chips, multigrain chips
+
+Task: I want a healthy fruit to munch on.
+Objects: apple, energy bar, jalapeno chips
+
+Task: Please give me that bottled water.
+Objects: bottled water, bottled unsweetened tea, rice chips
+
+Task: Put the rice chips in the top drawer.
+Objects: rice chips, Sprite, kettle chips
+
+Task: Put bottled tea next to the fruit.
+Objects: bottled tea, apple, orange
+
+Task: Put orange in the drawer.
+Objects: orange, kettle chips, orange soda
+
+Task: I need a bag of jalapeno chips.
+Objects: jalapeno chips, Coke, multigrain chips
+
+Task: Put apple near the bottle.
+Objects: bottled unsweetened tea, bottled water, apple
+
+Task: Put the Pepsi next to the orange.
+Objects: orange, Pepsi, Coke
+
+Task: Knock a bottled tea over.
+Objects: bottled tea, Pepsi, orange soda
+
+Task: Put the Coke in the middle drawer.
+Objects: Coke, rice chips, RedBull
+
+Task: I need a bottled water.
+Objects: bottled water, orange, bottled tea
+
+Task: Can I have a bag of jalapeno chips?.
+Objects: jalapeno chips, orange soda, energy bar
+
+Task: Put the orange soda in the middle drawer.
+Objects: orange soda, orange, rice chips
+
+Task: I'd like a bag of kettle chips.
+Objects: kettle chips, Pepsi, bottled tea
+
+Task: Please give me an orange soda.
+Objects: orange soda, Sprite, bottled water
+
+Task: Please give me an energy bar.
+Objects: energy bar, jalapeno chips, rice chips
+
+Task: Put the bottled tea in the middle drawer.
+Objects: bottled tea, RedBull, orange soda
+
+Task: Put that apple next to the Coke.
+Objects: orange, Coke, apple
+
+Task: May I have a bag of rice chips?.
+Objects: rice chips, multigrain chips, orange
+
+Task: Put bottled water beside the fruit.
+Objects: orange, bottled water, apple
+
+Task: Put bottled water in the drawer.
+Objects: bottled water, RedBull, jalapeno chips
+
+Task: Put the orange soda next to the apple.
+Objects: apple, orange soda, rice chips
+
+Task: Put bottled water near the chips.
+Objects: bottled water, rice chips, jalapeno chips
+
+Task: I need something to quench my thirst without any calories.
+Objects: bottled water, bottled tea, Sprite
+
+Task: Please give me a bag of rice chips.
+Objects: rice chips, kettle chips, RedBull
+
+Task: Can you throw away a bag of rice chips?.
+Objects: rice chips, apple, Coke
+
+Task: I want a fruit-flavored drink.
+Objects: orange soda, Sprite, bottled tea
+
+Task: Please pass me a Pepsi.
+Objects: Pepsi, jalapeno chips, energy bar
+
+Task: Put the energy bar in the middle drawer.
+Objects: energy bar, RedBull, multigrain chips
+
+Task: Put Pepsi near the chips.
+Objects: Pepsi, multigrain chips, kettle chips
+
+Task: Put bottled tea near the fruit.
+Objects: bottled tea, apple, orange
+
+Task: Put RedBull near the fruit.
+Objects: RedBull, apple, orange
+
+Task: Put Sprite next to the fruit.
+Objects: Sprite, orange, apple
+
+Task: Put multigrain chips beside the bottle.
+Objects: bottled water, bottled unsweetened tea, multigrain chips
+
+Task: I want a drink with a kick of caffeine and citrus flavor
+Objects: Pepsi, Coke, RedBull
+
+Task: Put bottled unsweetened tea in the drawer.
+Objects: bottled water, bottled unsweetened tea, kettle chips
+
+Task: Can you throw away a bottled water?.
+Objects: bottled water, orange, bottled tea
+
+Task: Put Coke beside the fruit.
+Objects: Coke, orange, apple
+
+Task: Put the jalapeno chips next to the orange.
+Objects: jalapeno chips, rice chips, orange
+
+Task: Put the multigrain chips in the middle drawer.
+Objects: multigrain chips, rice chips, orange
+
+Task: Put Coke beside the chips.
+Objects: Coke, kettle chips, multigrain chips
+
+Task: Can I have a Coke?.
+Objects: Coke, RedBull, jalapeno chips
+
+Task: Can I have the rice chips?
+Objects: Pepsi, rice chips, jalapeno chips
+
+Task: Can you pass me a snack that has a mix of different grains?
+Objects: apple, jalapeno chips, multigrain chips
+
+Task: I'm looking for a sweet, non-alcoholic drink.
+Objects: bottled tea, Pepsi, Sprite
+
+Task: Put Sprite beside the chips.
+Objects: Sprite, kettle chips, jalapeno chips
+
+Task: Put bottled water next to the can.
+Objects: bottled water, orange soda, Coke
+
+Task: I need a bag of rice chips.
+Objects: rice chips, RedBull, Sprite
+
+Task: Put the Sprite next to the orange.
+Objects: orange, Sprite, bottled tea
+
+Task: I could use some hydration.
+Objects: Pepsi, bottled unsweetened tea, Coke
+
+Task: Can I have the apple?
+Objects: energy bar, apple, Coke
+

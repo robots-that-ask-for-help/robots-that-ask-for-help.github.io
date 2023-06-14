@@ -1,0 +1,105 @@
+Task: Pick up the detergent bottle at the handle.
+
+Task: Pick up the green apple with the left arm.
+
+Task: Pick up the teapot at the handle.
+
+Task: Pick up the green block.
+
+Task: Pick up the Sprite can and pass it to me. I am next to the bin.
+
+Task: Pick up the mug with coffee.
+
+Task: Pick up the yellow block with the arm closer to it.
+
+Task: Move the book to the front of the table.
+
+Task: Pick up the cup at the handle.
+
+Task: Pick up the red block with the left arm.
+
+Task: Pick up the Coke can and pass it to me. I am next to the bin.
+
+Task: Move the storage bin to the front of the table.
+
+Task: Pick up the detegent bottle.
+
+Task: Pick up the green apple and pass it to me. I am next to the bin.
+
+Task: Pick up the yellow block.
+
+Task: Move the detergent bottle on the sticky rubber mat to the front of the table.
+
+Task: Pick up the basket at the handle.
+
+Task: Pick up the red block.
+
+Task: Pick up the pink plushie.
+
+Task: Pick up the green block with the left arm.
+
+Task: Move the juice jug on the sticky rubber mat to the front of the table.
+
+Task: Move the container box to the front of the table.
+
+Task: Put the banana in the bin closer to it.
+
+Task: Pick up the yellow block with the left arm.
+
+Task: Pick up the watering can at the handle.
+
+Task: Put the green apple in the bin closer to it.
+
+Task: Pick up the juice jug.
+
+Task: Pick up the banana with the left arm.
+
+Task: Pick up the banana and pass it to me. I am next to the bin.
+
+Task: Put the yellow plushie in the bin closer to it.
+
+Task: Pick up the pink plushie with the arm closer to it.
+
+Task: Pick up the mug at the handle.
+
+Task: Pick up the Sprite can with the left arm.
+
+Task: Put the green block in the bin closer to it.
+
+Task: Pick up the Sprite can with the arm closer to it.
+
+Task: Pick up the mango and pass it to me. I am next to the bin.
+
+Task: Pick up the green block with the arm closer to it.
+
+Task: Move the basket on the sticky rubber mat to the front of the table.
+
+Task: Pick up the mango with the left arm.
+
+Task: Put the Sprite can in the bin closer to it.
+
+Task: Pick up the yellow plushie with the arm closer to it.
+
+Task: Pick up the pink plushie with the left arm.
+
+Task: Pick up the yellow plushie.
+
+Task: Pick up the Coke can with the arm closer to it.
+
+Task: Put the Coke can in the bin closer to it.
+
+Task: Put the pink plushie in the bin closer to it.
+
+Task: Pick up the purple plushie with the left arm.
+
+Task: Pick up the purple plushie with the arm closer to it.
+
+Task: Pick up the green apple with the arm closer to it.
+
+Task: Pick up the banana with the arm closer to it.
+
+Task: Put the red block in the bin closer to it.
+
+Task: Pick up the red block with the arm closer to it.
+
+Task: Pick up the mango with the arm closer to it.

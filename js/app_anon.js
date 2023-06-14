@@ -25,6 +25,7 @@ var codegen_html_template = `
     var current_cmd_idxs = {
         "saycan": 1,
         "ur5": 1,
+        "bimanual": 1,
     }
 
     var vid_start_times = {

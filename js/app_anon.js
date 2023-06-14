@@ -30,7 +30,7 @@ var codegen_html_template = `
     var vid_start_times = {
         "saycan": {
             1: 0 * 60 + 3,
-            2: 0 * 60 + 55,
+            2: 0 * 60 + 57,
             3: 2 * 60 + 18,
             4: 2 * 60 + 51,
             5: 3 * 60 + 4,

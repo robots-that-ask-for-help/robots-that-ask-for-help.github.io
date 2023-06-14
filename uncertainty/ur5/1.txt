@@ -1,0 +1,10 @@
+Step 1:
+A) put sunny-side-up egg in blue plate. -> chosen by human and executed
+E) put mustard in green plate.
+
+Step 2:
+A) put mustard in green plate. -> executed without human help
+
+Step 3:
+C) put lettuce in green plate.
+E) put lettuce in blue plate. -> chosen by human and executed

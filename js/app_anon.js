@@ -22,9 +22,32 @@ var codegen_html_template = `
          }, 'text');
     });
 
+var codegen1_html_template = `
+<p>Per-step prediction set, human help, executed action:</p>
+<pre class="codegen1"><code class="language-python">{code}</code></pre>`;
+    $('[id^="code1_"]').each(function() {
+        var id = this.id;
+        domain_name_cmd_idx = id.substring(5);
+        var sep_idx = domain_name_cmd_idx.indexOf('_');
+        var domain_name = domain_name_cmd_idx.substring(0, sep_idx);
+        var cmd_idx_str = domain_name_cmd_idx.substring(sep_idx + 1);
+
+        var codegen_file = 'https://robots-that-ask-for-help.github.io/uncertainty/' + domain_name + '/' + cmd_idx_str + '.txt';
+        $.get(codegen_file, function(data) {
+            // var highlighted_code = hljs.highlight(data, {language: 'python'}).value;
+            var highlighted_code = data;
+            var html_code = codegen1_html_template
+                                .replace('{code}', highlighted_code)
+                                // .replace('{link}', codegen_file)
+                                ;
+            $(html_code).appendTo("#" + id);
+         }, 'text');
+    });
+
+
     var current_cmd_idxs = {
         "saycan": 1,
-        "blocksbowls": 1,
+        "ur5": 1,
     }
 
     var vid_start_times = {
@@ -46,7 +69,7 @@ var codegen_html_template = `
             15: 9 * 60 + 3,
             16: 10 * 60 + 4,
         },
-        "blocksbowls": {
+        "ur5": {
             1: 0 * 60 + 3,
             2: 0 * 60 + 50,
             3: 1 * 60 + 27,
@@ -78,7 +101,7 @@ var codegen_html_template = `
             15: 10 * 60 + 4,
             16: 10 * 60 + 48,
         },
-        "blocksbowls": {
+        "ur5": {
             1: 0 * 60 + 48,
             2: 1 * 60 + 25,
             3: 1 * 60 + 49,

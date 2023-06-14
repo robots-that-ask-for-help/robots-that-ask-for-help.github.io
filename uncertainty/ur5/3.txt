@@ -1,0 +1,10 @@
+Step 1:
+A) put peach in green plate.
+E) put orange in blue plate. -> chosen by human and executed
+
+Step 2:
+C) put pretzel in green plate. -> executed without human help
+
+Step 3:
+D) put peach in green plate. -> chosen by human and executed
+E) put peach in blue plate.

@@ -1,0 +1,10 @@
+Step 1:
+D) put peanut butter in blue plate. -> chosen by human and executed
+E) put carrot in blue plate.
+
+Step 2:
+C) put mango in green plate. -> executed without human help
+
+Step 3:
+A) put carrot in blue plate. -> chosen by human and executed
+D) put carrot in green plate.

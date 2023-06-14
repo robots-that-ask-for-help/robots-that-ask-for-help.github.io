@@ -1,0 +1,4 @@
+A) Open the top drawer and put the orange soda in it.
+B) Open the middle drawer and put the sprite in it. 
+C) Open the middle drawer and put the orange soda in it. -> chosen by human and executed
+E) Open the top drawer and put the sprite in it.

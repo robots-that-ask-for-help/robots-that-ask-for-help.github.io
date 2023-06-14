@@ -1,2 +1,2 @@
-D) Pick up the metal bowl and put it in the microwave
-E) Pick up the plastic bowl and put it on the microwave
+B) Pick up the bag of kettle chips and navigate to human.
+D) Pick up the bag of rice chips and navigate to human. -> chosen by human and executed

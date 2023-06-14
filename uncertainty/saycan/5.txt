@@ -1,0 +1,4 @@
+A) Open the top drawer and put the kettle chips in it.
+B) Open the middle drawer and put the multigrain chips in it. -> chosen by human and executed
+C) Open the top drawer and put the multigrain chips in it.
+E) Open the middle drawer and put the kettle chips in it

@@ -1,0 +1,2 @@
+C) Open the middle drawer and put the apple in it. 
+D) Open the top drawer and put the apple in it. -> chosen by human and executed

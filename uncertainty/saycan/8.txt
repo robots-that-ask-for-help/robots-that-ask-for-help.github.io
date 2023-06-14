@@ -1,0 +1,3 @@
+B) pick up the multigrain chips and put it next to the orange.
+C) a different option not listed here.
+E) pick up the multigrain chips and put it next to the apple. -> chosen by human and executed

@@ -1,0 +1,2 @@
+B) pick up the energy bar and put it in the landfill bin.
+E) pick up the sponge and put it in the landfill bin. -> chosen by human and executed

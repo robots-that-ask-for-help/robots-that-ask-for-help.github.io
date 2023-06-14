@@ -1,0 +1,3 @@
+A) pick up the orange and put it in the compost bin.
+B) pick up the apple and put it in the landfill bin.
+E) pick up the apple and put it in the compost bin. -> chosen by human and executed

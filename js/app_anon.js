@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 var codegen_html_template = `
-<p>Prediction Set from Conformal Prediction:</p>
+<p>Prediction set, human help, executed action:</p>
 <pre class="codegen"><code class="language-python">{code}</code></pre>`;
     $('[id^="code_"]').each(function() {
         var id = this.id;

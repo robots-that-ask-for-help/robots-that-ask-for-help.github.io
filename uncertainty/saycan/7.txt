@@ -1,2 +1,2 @@
-A) pick up the apple and put it near the bottled unsweetened tea -> chosen by human and executed
-C) pick up the apple and put it near the bottled water
+A) pick up the apple and put it near the bottled unsweetened tea.
+C) pick up the apple and put it near the bottled water. -> chosen by human and executed

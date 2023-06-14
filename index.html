@@ -100,14 +100,12 @@
 
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
+                <br>
                 <h3>
                     Goal
                 </h3>
                 <p class="text-justify">
-                    In the setting of the robot with access to a LLM-based planner and human help, we aim to achieve both:<br>(1) Calibrated confidence: the robot should seek sufficient help to ensure a statistically guaranteed level of task success specified by the user.<br>(2) Minimal help: the robot
-                    should minimize the overall amount of help it seeks by narrowing down possible ambiguities in a task
-                <br><br>
-                We collectively refer to these sufficiency and minimality conditions as uncertainty alignment. 
+                    In the setting of the robot with access to a LLM-based planner and human help, we aim to achieve both: (1) <strong>calibrated confidence:</strong> the robot should seek sufficient help to ensure a statistically guaranteed level of task success specified by the user, and (2) <strong>minimal help:</strong> the robot should minimize the overall amount of help it seeks by narrowing down possible ambiguities in a task. We collectively refer to these sufficiency and minimality conditions as uncertainty alignment. 
             </div>
         </div>
 
@@ -117,25 +115,11 @@
                     Approach
                 </h3>
                 <p class="text-justify">
-                    
-                <br><br>
-                    KnowNo builds upon conformal prediction (CP) to formally quantify the LLM uncertainty. We first construct a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, we prompt LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. We obtain the likelihood of the LLM predicting the five tokens: A, B, C, D, E. CP then calibrates the planner
-                <br><br>
-                    When querying existing large language models, we see that a language model queried with "I spilled my drink, can you help?" may respond with "You could try using a vaccuum cleaner" or "I'm sorry, I didn't mean to spill it".
+                    KnowNo builds upon <a href="https://en.wikipedia.org/wiki/Conformal_prediction">conformal prediction</a> (CP) to formally quantify the LLM uncertainty and achieve uncertainty alignment. KnowNo first constructs a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, KnowNo prompts LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. KnowNo obtains the likelihood of the LLM predicting the five tokens: A, B, C, D, E. Then CP performs calibration using the likelihood of the true options of the dataset --- the result of the calibration is a threshold for the likelihood. At test time given a new scenario, the prediction set includes options with likelihood above the threshold. CP provides statistical guarantee that the true option is included in the prediction set with a user-specified probability. Further, CP affords the benefit of producing smallest average prediction set size with theoretical guarantees.
                 <p style="text-align:center;">
-        	        <image src="img/mcqa-cp.png" class="img-responsive">
+                    <image src="img/mcqa-cp.png" width="100%">
                 </p>
-                    While these responses sound reasonable, they are not feasible to execute with the robot's capabilities in its current environment.  
-                <br><br>
-                    The main principle that we use to connect LLMs to physical tasks is to observe that, in addition of asking the LLM to simply interpret an instruction, we can use it to score the likelihood that an individual skill makes progress towards completing the high-level instruction.
-                    Furthermore, if each skill has an accompanying affordance function that quantifies how likely it is to succeed from the current state (such as a learned value function), its value can be used to weight the skill's likelihood.
-                <br><br>
-                    Once the skill is selected, we execute it on the robot, the process proceeds by iteratively selecting a task and appending it to the instruction.
-                    Practically, we structure the planning as a dialog between a user and a robot, in which a user provides the high level-instruction, e.g. "How would you bring me a coke can?" and the language model responds with an explicit sequence e.g. "I would: 1. Find a coke can, 2. Pick up the coke can, 3. Bring it to you, 4. Done".  
-                <p style="text-align:center;">
-        	        <image src="img/mcqa-cp.png" class="img-responsive">
-                    </p>
-                In summary, given a high-level instruction, SayCan combines probabilities from a language model (representing the probability that a skill is useful for the instruction) with the probabilities from a value function (representing the probability of successfully executing said skill) to select the skill to perform. This emits a skill that is both possible and useful. The process is repeated by appending the selected skill to robot response and querying the models again, until the output step is to terminate.    
+                KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to task completion guarantee. As CP provides small prediction sets, the human help is minimal. Overall, KnowNo achieves the goal of uncertainty alignment.
             </div>
         </div>
 

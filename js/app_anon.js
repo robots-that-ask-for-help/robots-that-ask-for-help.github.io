@@ -133,17 +133,17 @@ var codegen_html_template = `
         desired_content.show();
 
         // switch videos
-        if (domain_name.startsWith("mobile")) {
-            var current_vid = $('#vid_1_' + domain_name + "_" + current_cmd_idx.toString()).get(0);
-            var desired_vid = $('#vid_1_' + domain_name + "_" + desired_cmd_idx.toString()).get(0);
-            current_vid.pause();
-            desired_vid.play();
-        } else {
-            var vid = $("#vid_" + domain_name)[0];
-            var start_time = vid_start_times[domain_name][desired_cmd_idx];
-            var end_time = vid_end_times[domain_name][desired_cmd_idx];
-            playSeg(vid, start_time, end_time, domain_name, desired_cmd_idx);
-        }
+        // if (domain_name.startsWith("mobile")) {
+        //     var current_vid = $('#vid_1_' + domain_name + "_" + current_cmd_idx.toString()).get(0);
+        //     var desired_vid = $('#vid_1_' + domain_name + "_" + desired_cmd_idx.toString()).get(0);
+        //     current_vid.pause();
+        //     desired_vid.play();
+        // } else {
+        var vid = $("#vid_" + domain_name)[0];
+        var start_time = vid_start_times[domain_name][desired_cmd_idx];
+        var end_time = vid_end_times[domain_name][desired_cmd_idx];
+        playSeg(vid, start_time, end_time, domain_name, desired_cmd_idx);
+        // }
 
         // set current to desired
         current_cmd_idxs[domain_name] = desired_cmd_idx;

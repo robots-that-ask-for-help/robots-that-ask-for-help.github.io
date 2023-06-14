@@ -22,29 +22,6 @@ var codegen_html_template = `
          }, 'text');
     });
 
-var codegen1_html_template = `
-<p>Per-step prediction set, human help, executed action:</p>
-<pre class="codegen1"><code class="language-python">{code}</code></pre>`;
-    $('[id^="code1_"]').each(function() {
-        var id = this.id;
-        domain_name_cmd_idx = id.substring(5);
-        var sep_idx = domain_name_cmd_idx.indexOf('_');
-        var domain_name = domain_name_cmd_idx.substring(0, sep_idx);
-        var cmd_idx_str = domain_name_cmd_idx.substring(sep_idx + 1);
-
-        var codegen_file = 'https://robots-that-ask-for-help.github.io/uncertainty/' + domain_name + '/' + cmd_idx_str + '.txt';
-        $.get(codegen_file, function(data) {
-            // var highlighted_code = hljs.highlight(data, {language: 'python'}).value;
-            var highlighted_code = data;
-            var html_code = codegen1_html_template
-                                .replace('{code}', highlighted_code)
-                                // .replace('{link}', codegen_file)
-                                ;
-            $(html_code).appendTo("#" + id);
-         }, 'text');
-    });
-
-
     var current_cmd_idxs = {
         "saycan": 1,
         "ur5": 1,
@@ -70,15 +47,16 @@ var codegen1_html_template = `
             16: 10 * 60 + 4,
         },
         "ur5": {
-            1: 0 * 60 + 3,
-            2: 0 * 60 + 50,
-            3: 1 * 60 + 27,
-            4: 1 * 60 + 50,
-            5: 2 * 60 + 58,
-            6: 4 * 60 + 17,
-            7: 4 * 60 + 30,
-            8: 4 * 60 + 42,
-            9: 5 * 60 + 43
+            1: 0 * 60 + 0,
+            2: 0 * 60 + 22,
+            3: 0 * 60 + 44,
+            4: 1 * 60 + 5,
+            5: 1 * 60 + 27,
+            6: 1 * 60 + 49,
+            7: 2 * 60 + 11,
+            8: 2 * 60 + 33,
+            9: 2 * 60 + 54,
+            10: 3 * 60 + 14,
         }
     }
 
@@ -102,15 +80,16 @@ var codegen1_html_template = `
             16: 10 * 60 + 48,
         },
         "ur5": {
-            1: 0 * 60 + 48,
-            2: 1 * 60 + 25,
-            3: 1 * 60 + 49,
-            4: 2 * 60 + 57,
-            5: 4 * 60 + 16,
-            6: 4 * 60 + 29,
-            7: 4 * 60 + 41,
-            8: 5 * 60 + 42,
-            9: 6 * 60 + 11
+            1: 0 * 60 + 22,
+            2: 0 * 60 + 44,
+            3: 1 * 60 + 5,
+            4: 1 * 60 + 27,
+            5: 1 * 60 + 49,
+            6: 2 * 60 + 11,
+            7: 2 * 60 + 33,
+            8: 2 * 60 + 54,
+            9: 3 * 60 + 14,
+            10: 3 * 60 + 36,
         }
     }
 

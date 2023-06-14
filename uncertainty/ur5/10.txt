@@ -1,0 +1,11 @@
+Step 1:
+A) put lettuce in blue plate.
+C) put egg in blue plate. -> chosen by human and executed
+
+Step 2:
+B) put lettuce in blue plate. -> chosen by human and executed
+D) put skittles in green plate.
+E) put lettuce in green plate.
+
+Step 3:
+B) put skittles in green plate. -> executed without human help

@@ -1,0 +1,10 @@
+Step 1:
+D) put pea in blue plate. -> chosen by human and executed
+E) put skittles in blue plate.
+
+Step 2:
+A) put skittles in green plate. -> chosen by human and executed
+E) put lemon in green plate.
+
+Step 3:
+E) put lemon in green plate. -> executed without human help, incorrect

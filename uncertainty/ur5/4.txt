@@ -1,0 +1,10 @@
+Step 1:
+A) put carrot in blue plate. -> chosen by human and executed
+E) put pizza in green plate.
+
+Step 2:
+B) put egg in blue plate. -> chosen by human and executed
+E) put pizza in green plate.
+
+Step 3:
+D) put pizza in green plate. -> executed without human help

@@ -1,0 +1,11 @@
+Step 1:
+C) put mustard in green plate. -> chosen by human and executed
+E) put chicken drumstick in green plate.
+
+Step 2:
+B) put sunny-side-up egg in blue plate. -> chosen by human and executed
+E) put chicken drumstick in blue plate
+
+Step 3:
+A) put chicken drumstick in blue plate.
+E) put chicken drumstick in green plate. -> chosen by human and executed

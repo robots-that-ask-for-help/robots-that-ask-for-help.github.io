@@ -1,0 +1,10 @@
+Step 1:
+C) put carrot in blue plate.
+E) put egg in blue plate. -> chosen by human and executed
+
+Step 2:
+C) put carrot in blue plate.
+D) put donut in green plate. -> chosen by human and executed
+
+Step 3:
+C) put carrot in blue plate. -> executed without human help

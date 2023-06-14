@@ -1,0 +1,11 @@
+Step 1:
+C) put pear in blue plate. -> chosen by human and executed
+E) put waffle in green plate
+
+Step 2:
+A) put waffle in green plate.
+D) put donut in green plate. -> chosen by human and executed
+
+Step 3:
+A) put waffle in green plate. -> chosen by human and executed
+E) put waffle in blue plate.

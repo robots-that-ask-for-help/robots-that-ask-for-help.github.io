@@ -162,11 +162,6 @@
   }
 
 pre.codegen {
-  height: 80px;
-  overflow-y: scroll;
-}
-
-pre.codegen1 {
-  height: 200px;
+  height: 100px;
   overflow-y: scroll;
 }

@@ -1,0 +1,10 @@
+Step 1:
+A) put apple in blue plate. -> chosen by human and executed
+E) put tomato in blue plate.
+
+Step 2:
+A) put peach in green plate. -> chosen by human and executed
+E) put tomato in green plate
+
+Step 3:
+E) put tomato in blue plate. -> executed without human help

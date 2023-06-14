@@ -115,15 +115,15 @@
                     Approach
                 </h3>
                 <p class="text-justify">
-                    KnowNo builds upon <a href="https://en.wikipedia.org/wiki/Conformal_prediction">conformal prediction</a> (CP) to formally quantify the LLM uncertainty and achieve uncertainty alignment. KnowNo first constructs a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, KnowNo prompts LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. KnowNo obtains the likelihood of the LLM predicting the five tokens: A, B, C, D, E. Then CP performs calibration using the likelihood of the true options of the dataset --- the result of the calibration is a threshold for the likelihood. At test time given a new scenario, the prediction set includes options with likelihood above the threshold. CP provides statistical guarantee that the true option is included in the prediction set with a user-specified probability. Further, CP affords the benefit of producing smallest average prediction set size with theoretical guarantees.
+                    KnowNo builds upon <a href="https://en.wikipedia.org/wiki/Conformal_prediction">conformal prediction</a> (CP) to formally quantify the LLM uncertainty and achieve uncertainty alignment. KnowNo first constructs a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, KnowNo prompts LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. KnowNo obtains the likelihood of the LLM predicting the five tokens: A, B, C, D, E. Then calibration is done using the likelihood of the true options of the dataset, and the result is a likelihood threshold. At test time given a new scenario, the prediction set includes options with likelihood above the threshold. CP provides statistical guarantee that the true option is included in the prediction set with probability of a user-specified level. In addition, CP affords the benefit of producing smallest average prediction set size with theoretical guarantees.
                 <p style="text-align:center;">
                     <image src="img/mcqa-cp.png" width="100%">
                 </p>
-                KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to <strong>task completion guarantee</strong>. As CP provides small prediction sets, the human help is minimal. Overall, KnowNo achieves the goal of uncertainty alignment.
+                KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to <strong>task completion guarantee</strong>. As CP provides small prediction sets, the human help is minimal. Overall, KnowNo achieves the goal of <strong>uncertainty alignment</strong>.
                 <p style="text-align:center;">
                     <image src="img/multistep-bimanual.png" width="100%">
                 </p>
-                We
+                KnowNo can also be applied in multi-step planning settings (with possibly multiple acceptable options per step) with novel extensions of CP derived in our work.
             </div>
         </div>
 

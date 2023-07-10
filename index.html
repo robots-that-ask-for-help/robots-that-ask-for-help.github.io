@@ -79,7 +79,7 @@
         <div class="row mt-4">
             <div class="col-md-12 text-center">
                 <video id="v0" width="80%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/webpage-front.mp4" type="video/mp4">
+                    <source src="videos/knowno-microwave-score-handbrake.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -90,7 +90,7 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    Large language models (LLMs) exhibit a wide range of promising capabilities --- from step-by-step planning to commonsense reasoning --- that may provide utility for robots, but remain prone to confidently hallucinated predictions. In this work, we present KnowNo, a framework for measuring and aligning the uncertainty of LLM-based planners, such that they know when they don't know, and ask for help when needed. KnowNo builds on the theory of conformal prediction to provide statistical guarantees on task completion while minimizing human help in complex multi-step planning settings. Experiments across a variety of simulated and real robot setups that involve tasks with different modes of ambiguity (e.g., from spatial to numeric uncertainties, from human preferences to Winograd schemas) show that KnowNo performs favorably over modern baselines (which may involve ensembles or extensive prompt tuning) in terms of improving efficiency and autonomy, while providing formal assurances. KnowNo can be used with LLMs out-of-the-box without model-finetuning, and suggests a promising lightweight approach to modeling uncertainty that can complement and scale with the growing capabilities of foundation models.
+                    Large language models (LLMs) exhibit a wide range of promising capabilities --- from step-by-step planning to commonsense reasoning --- that may provide utility for robots, but remain prone to confidently hallucinated predictions. In this work, we present KnowNo, which is a framework for measuring and aligning the uncertainty of LLM-based planners such that they know when they don't know and ask for help when needed. KnowNo builds on the theory of conformal prediction to provide statistical guarantees on task completion while minimizing human help in complex multi-step planning settings. Experiments across a variety of simulated and real robot setups that involve tasks with different modes of ambiguity (e.g., from spatial to numeric uncertainties, from human preferences to Winograd schemas) show that KnowNo performs favorably over modern baselines (which may involve ensembles or extensive prompt tuning) in terms of improving efficiency and autonomy, while providing formal assurances. KnowNo can be used with LLMs out of the box without model-finetuning, and suggests a promising lightweight approach to modeling uncertainty that can complement and scale with the growing capabilities of foundation models.
                 </p>
                 <p style="text-align:center;">
                     <image src="img/robot-help-teaser.png" width="100%">
@@ -105,9 +105,10 @@
                     Goal
                 </h3>
                 <p class="text-justify">
-                    In the setting of the robot with access to a LLM-based planner and human help, we aim to achieve both: (1) <strong>calibrated confidence:</strong> the robot should seek sufficient help to ensure a statistically guaranteed level of task success specified by the user, and (2) <strong>minimal help:</strong> the robot should minimize the overall amount of help it seeks by narrowing down possible ambiguities in a task. We collectively refer to these sufficiency and minimality conditions as <strong>uncertainty alignment</strong>. 
+                    In the setting of the robot with access to a LLM-based planner and human help, we aim to achieve both: (1) <strong>calibrated confidence:</strong> the robot should seek sufficient help to ensure a statistically guaranteed level of task success specified by the user, and (2) <strong>minimal help:</strong> the robot should minimize the overall amount of help it seeks by narrowing down possible ambiguities in a task. We collectively refer to these sufficiency and minimality conditions as <strong>uncertainty alignment</strong>.
             </div>
         </div>
+
 
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
@@ -115,16 +116,26 @@
                     Approach
                 </h3>
                 <p class="text-justify">
-                    KnowNo builds upon <a href="https://en.wikipedia.org/wiki/Conformal_prediction">conformal prediction</a> (CP) to formally quantify the LLM uncertainty and achieve uncertainty alignment. KnowNo first constructs a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, KnowNo prompts LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. KnowNo obtains the likelihood of the LLM predicting the five tokens: A, B, C, D, E. Then calibration is done using the likelihood of the true options of the dataset, and the result is a likelihood threshold. At test time given a new scenario, the prediction set includes options with likelihood above the threshold. CP provides statistical guarantee that the true option is included in the prediction set with probability of a user-specified level. In addition, CP affords the benefit of producing smallest average prediction set size with theoretical guarantees.
-                <p style="text-align:center;">
+                    KnowNo builds upon <a href="https://en.wikipedia.org/wiki/Conformal_prediction">conformal prediction</a> (CP) to formally quantify the LLM uncertainty and achieve uncertainty alignment. KnowNo first constructs a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, KnowNo prompts LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. KnowNo obtains the likelihood of the LLM predicting the five choices: A, B, C, D, E. Then calibration is done using the likelihood of the true options of the calibration data, and the result is a likelihood threshold. At test time given a new scenario, the prediction set includes options with likelihood above the threshold. CP provides statistical guarantee that the true option is included in the prediction set with probability of a user-specified level. In addition, CP affords the benefit of producing smallest average prediction set size with theoretical guarantees.
+                <br><br><p style="text-align:center;">
                     <image src="img/mcqa-cp.png" width="100%">
-                </p>
-                KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to <strong>task completion guarantee</strong>. As CP provides small prediction sets, the human help is minimal. Overall, KnowNo achieves the goal of uncertainty alignment.
+                </p><br>
+                KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to <strong>task completion guarantee</strong>. As CP provides small prediction sets, the human help is minimal. These two properties achieve the goal of calibrated confidence and minimal help.
+                <br>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
+                            <source src="videos/knowno-cp-handbrake.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <br>
+                KnowNo can also be applied in <strong>multi-step</strong> planning settings (with possibly multiple acceptable options per step) with novel extensions of CP derived in our work. KnowNo provides statistical guarantees on episode-level task completion and minimizes human intervention on both sequence and step levels.
                 <br><br>
                 <p style="text-align:center;">
                     <image src="img/multistep-bimanual.png" width="100%">
                 </p>
-                KnowNo can also be applied in multi-step planning settings (with possibly multiple acceptable options per step) with novel extensions of CP derived in our work. KnowNo provides statistical guarantees on task completion on sequence level and minimizes human intervention on both sequence and step levels.
+                <br>
             </div>
         </div>
 
